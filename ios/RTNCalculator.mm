@@ -4,6 +4,7 @@
 
 RCT_EXPORT_MODULE()
 
+#ifdef RCT_NEW_ARCH_ENABLED
 - (void)add:(double)a b:(double)b resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject {
     NSNumber *result = [[NSNumber alloc] initWithInteger:a+b];
     resolve(result);
@@ -14,5 +15,6 @@ RCT_EXPORT_MODULE()
 {
     return std::make_shared<facebook::react::NativeCalculatorSpecJSI>(params);
 }
+#endif
 
 @end
