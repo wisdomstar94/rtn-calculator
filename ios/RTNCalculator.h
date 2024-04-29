@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RTNCalculator : NSObject <NativeRtnCalculatorSpec>
+@interface RTNCalculator : NSObject <NativeCalculatorSpec>
 
 @end
 
