@@ -1,0 +1,43 @@
+{
+  "name": "rtn-calculator",
+  "version": "0.0.1",
+  "description": "Add numbers with Turbo Native Modules",
+  "react-native": "js/index",
+  "source": "js/index",
+  "scripts": {
+    "generate:ios": "node ./node_modules/react-native/scripts/generate-codegen-artifacts.js --path ../react_native_sample_app/ --outputPath RTNCalculator/generated/ --targetPlatform ios",
+    "generate:android": "node ./node_modules/react-native/scripts/generate-codegen-artifacts.js --path ../react_native_sample_app/ --outputPath RTNCalculator/generated/ --targetPlatform android"
+  },
+  "files": [
+    "js",
+    "android",
+    "ios",
+    "rtn-calculator.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "keywords": ["react-native", "ios", "android"],
+  "repository": "https://github.com/<your_github_handle>/rtn-calculator",
+  "author": "wisdomstar94@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wisdomstar94/rtn-calculator/issues"
+  },
+  "homepage": "https://github.com/wisdomstar94/rtn-calculator#readme",
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "RTNCalculatorSpec",
+    "type": "modules",
+    "jsSrcsDir": "js",
+    "android": {
+      "javaPackageName": "com.rtncalculator"
+    }
+  }
+}
